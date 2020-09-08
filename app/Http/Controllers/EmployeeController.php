@@ -65,4 +65,15 @@ class EmployeeController extends Controller
         $job->save();
         return redirect('employee');
     }
+
+    public function delete($id)
+    {
+        $job = Job::find($id);
+        return view('employee.delete')->with('job', $job);
+    }
+    public function destroy($id)
+    {
+        Job::destroy($id);
+        return redirect('employee');
+    }
 }
