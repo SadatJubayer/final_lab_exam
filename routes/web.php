@@ -13,3 +13,6 @@ Route::post('/login', 'UserController@login');
 
 Route::get('/register', 'UserController@registerView');
 Route::post('/register', 'UserController@register');
+
+
+Route::get('/admin', 'AdminController@index');
