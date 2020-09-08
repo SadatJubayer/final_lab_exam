@@ -16,3 +16,5 @@ Route::post('/register', 'UserController@register');
 
 
 Route::get('/admin', 'AdminController@index');
+Route::get('/admin/create', 'AdminController@create');
+Route::post('/admin/create', 'AdminController@store');
