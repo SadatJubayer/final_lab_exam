@@ -36,7 +36,7 @@ class UserController extends Controller
             }
 
             $request->session()->put('type', "employee");
-            return redirect('employee/index');
+            return redirect('employee');
         } else {
             return redirect('login')->withErrors('Invalid Creditials');
         }
