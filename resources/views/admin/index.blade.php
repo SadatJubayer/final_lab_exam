@@ -30,8 +30,8 @@
             <td>{{$users[$i]->contact}}</td>
             <td>{{$users[$i]->company}}</td>
             <td>
-                <a href="edit/{{$users[$i]->id}}">Edit</a>
-                <a href="delete/{{$users[$i]->id}}">Delete</a>
+                <a href="admin/edit/{{$users[$i]->id}}">Edit</a>
+                <a href="admin/delete/{{$users[$i]->id}}">Delete</a>
             </td>
         </tr>
         @endfor
